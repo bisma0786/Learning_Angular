@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    color: rgb(12, 86, 83);
+      font-size: 70px
+
+}
+.text{
+  text-align: center;
+  font-size: 50px;
+      color: rgb(87, 191, 197);
+
+  
+}
+.btns{
+ text-align: center;
+    gap: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+button{
+ padding: 20px 28px;
+ border-radius: 10px;
+ color: rgb(241, 241, 241);
+ cursor: pointer;
+ background-color: rgb(12, 86, 83);
+ margin: 10px;
+ size: 50px;
+ align-content: center;
+ font-weight: 400px;
+ font-size: 20px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight: bolder;
+ box-shadow: inset;
+
+}
