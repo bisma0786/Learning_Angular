@@ -1,0 +1,17 @@
+<p>Learn Get Set Value in input fields</p>
+
+
+<!-- Get set value by using function + event -->
+<input (input)="updateName($event.target.value)" placeholder="Type your Name">
+<p>Name: {{name}}</p>
+
+
+<!-- Get set value by using $event (event Object) -->
+<input (input)="city = $event.target.value" placeholder="Type your City">
+<p>YOur city: {{city}}</p>
+
+
+<!-- Get set value by using Template refrence Variable(#ref) -->
+<input  #userInput placeholder="Enter your Email">
+ <button (click)="getEmail(userInput.value)">Get Email</button>
+<p>Your Email{{email}}</p>

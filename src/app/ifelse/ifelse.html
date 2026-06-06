@@ -1,0 +1,40 @@
+<p>ifelse works!</p>
+@if(isLoggedIn){
+    <h1>Welcome Bisma</h1>
+}@else{
+    <h1>Please log in first</h1>
+}
+
+@if(marks >= 65){
+    <p>Congrats you are Pass</p>
+}@else{
+    <p>fails</p>
+}
+
+<button (click)=" toggleButton()">click</button>
+
+@if( isToggleButton){
+    <div>this is box</div>
+}
+
+<input (input)="updateAge($event.target.value)" placeholder="enter your age">
+@if(age >= 18){
+    <p>Adult</p>
+}@else if(age >= 1 && age < 18 ){
+    <p>Minor</p>
+}@else{
+    <p>Enter your ae</p>
+}
+ <button (click)="section= 'home'">Home</button>
+  <button (click)="section= 'profile'">Profile</button>
+ <button (click)="section= 'setting'">Setting</button>
+
+@if(section === 'home' ){
+    <p>Welcome to home page</p>
+} @else if(section === 'setting'){
+    <p>welcome to setting</p>
+}@else if(section === 'profile'){
+    <p>welcome to profile</p>
+}@else {
+    <p>invalid</p>
+}
