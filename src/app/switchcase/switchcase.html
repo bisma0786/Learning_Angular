@@ -1,0 +1,53 @@
+<p>switchcase works!</p>
+@switch (value) {
+    @case ('home'){
+        <p>welcome to homepage</p>
+    }
+    @case ('about') {
+        <p>welcome to aboutpage</p>
+    }
+    @case ('profile'){
+        <p>welcome to profilepage</p>
+    }
+    @default{
+        <p>invalid</p>
+    }
+}
+
+<button (click)="tab='home'">Home</button>
+<button (click)="tab='about'">About</button>
+<button (click)="tab='profile'">Profile</button>
+
+@switch (tab) {
+    @case ('home'){
+        <p>Welcome to Home</p>
+    }
+    @case ('about'){
+        <p>Welcome to About Section</p>
+    }
+    @case ('profile'){
+        <p>Welcome to profile</p>
+    }
+    @default{
+        <p>Invalid Action</p>
+    }
+}
+
+<br>
+
+<input (input)="updateCat($event.target.value)" placeholder="Enter Your Food Category">
+
+@switch(category){
+    @case('fruit'){
+        <p>fruit selected</p>
+    }
+    @case('veg'){
+        <p>veg selected</p>
+    }
+    @case('non-veg'){
+        <p>non veg slected</p>
+    }
+    @default{
+        <p>Invalid value selected</p>
+    }
+}
