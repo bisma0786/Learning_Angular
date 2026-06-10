@@ -1,4 +1,11 @@
 <p>forloop works!</p>
 @for (item of items; track $index){
-<h1>Answer is: {{itrms}}</h1>
+<h1>Answer is: {{items}}</h1>
 1}
+
+@for (u of user; track $index){
+    <div>
+        <h4>{{u.name}}</h4>
+        <p>Age = {{u.age}}</p>
+    </div>
+}
