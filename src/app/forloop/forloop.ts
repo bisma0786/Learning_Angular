@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class Forloop {
   items = ['apple', 'mango', 'banana']
+  user = [
+    {name: 'bisma' , age: 18},
+    {name: 'aisha' , age: 38},
+    {name: 'jia' , age: 19}
+  ];
 }
