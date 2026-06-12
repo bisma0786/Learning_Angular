@@ -8,10 +8,53 @@
         <h4>{{u.name}}</h4>
         <p>Age = {{u.age}}</p>
     </div>
-} -->
+}
 
 @for(item of fruits; track $index; let i = $index){
     <p>{{item}}</p>
     <button (click)=" removeItem(i)">Delete</button>
-}
+} -->
 
+
+<!-- @for (n of number; track $index;) {
+    @if(n % 2 !==0)
+    {
+        <p>{{n}}</p>
+    }
+
+} -->
+@if( numbers.length== 0)
+    {
+<p>no data found</p>
+}
+    @else{
+        <p>{{numbers}}</p>
+    }
+
+    @for(item of lang; track $index ){
+        @if($last){
+            <p>last item: {{item}}</p>
+        }
+        @else{
+            <p>{{item}}</p>
+        }
+    }
+
+    @for(item of lang; track $index ){
+      <p [style.background]="$even? 'red' : 'yellow'">{{item}}</p>
+    }
+
+    @for(number of num; track $index){
+        <strong>{{number}}</strong>
+        <div>
+
+        <span> |  Index: {{$index}}</span>
+        <span> |  Even: {{$even}}</span>
+        <span> |  Odd: {{$odd}}</span>
+        <span> |  First: {{$first}}</span>
+        <span> |  Last: {{$last}}</span>
+        <span> |  Count: {{$count}}</span>
+        </div>
+        
+
+    }
