@@ -1,5 +1,10 @@
 import { Component, signal } from '@angular/core';
 
+
+interface User{
+  name: string;
+  age : number;
+}
 @Component({
   selector: 'app-signals',
   imports: [],
@@ -24,5 +29,29 @@ export class Signals {
 
   reset(){
     this.count.set(0);
+  }
+ // signals with datatypes
+  name = signal<string>("bisma");
+  age = signal<number>(19);
+  isAmin = signal<boolean>(true);
+  //Array
+  num = signal<number []>([23, 54, 54, 12]);
+  //Object
+  user = signal<{name: string, age: number}>({
+    name: "bisma",
+    age :78
+  })
+  //using Interface
+   users = signal<User>({
+    name: "bisma",
+    age :78
+  })
+
+  directUpdate(){
+    this.num.set([34,89,9])
+  }
+
+  addNumber(){
+    this.num.update(arr => [...arr, 590, 65])
   }
 }
