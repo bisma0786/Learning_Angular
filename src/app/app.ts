@@ -4,13 +4,14 @@ import { Getset } from './getset/getset';
 import { Ifelse } from './ifelse/ifelse';
 import { Switchcase } from './switchcase/switchcase';
 import { Forloop } from './forloop/forloop';
+import { Signals } from './signals/signals';
 
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Getset, Ifelse, Switchcase, Forloop ],
+  imports: [RouterOutlet, Getset, Ifelse, Switchcase, Forloop, Signals ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
