@@ -1,0 +1,19 @@
+<h1>City: {{city}}</h1>
+<h2>Age: {{age}}</h2>
+<img [src]="imgUrl" height="300px" width="400px">
+<br>
+<h4>{{num}}</h4>
+<button (click)="count()">click</button>
+<br><br>
+<input (input)="name =$event.target.value">
+<h5>{{name}}</h5>
+<br>
+<input (input)="updateValue($event.target.value)">
+<h5>{{cities}}</h5>
+
+<input #names placeholder="enter data">
+
+<button (click)="getData(names.value)">Get Data</button>
+<p> Your Data{{nameses}}</p>
+<br>
+<button [style.color]="'blue'">click</button>
