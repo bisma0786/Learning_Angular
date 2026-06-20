@@ -6,13 +6,15 @@ import { Switchcase } from './switchcase/switchcase';
 import { Forloop } from './forloop/forloop';
 import { Signals } from './signals/signals';
 import { Revision } from './revision/revision';
+import { Computedsignals } from './computedsignals/computedsignals';
+import { Effects } from './effects/effects';
 
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Getset, Ifelse, Switchcase, Forloop, Signals, Revision ],
+  imports: [RouterOutlet, Getset, Ifelse, Switchcase, Forloop, Signals, Revision, Computedsignals, Effects ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
