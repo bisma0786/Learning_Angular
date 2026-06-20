@@ -1,1 +1,38 @@
-<p>computedsignals works!</p>
+<h2>Angular Signals Practice</h2>
+
+<!-- COUNT SECTION -->
+<div>
+  <h3>Count: {{ count() }}</h3>
+
+  <button (click)="increament()">Increase</button>
+
+  <p>Double Count: {{ doubleCount() }}</p>
+  <p>Triple Count: {{ tripleCount() }}</p>
+</div>
+
+<hr />
+
+<!-- FULL NAME SECTION -->
+<div>
+  <h3>Full Name</h3>
+
+  <p>First Name: {{ firstName() }}</p>
+  <p>Last Name: {{ lastName() }}</p>
+
+  <h4>Full Name: {{ fullName() }}</h4>
+</div>
+
+<hr />
+
+<!-- PRICE TOTAL SECTION -->
+<div>
+  <h3>Prices</h3>
+
+  <ul>
+    <li *ngFor="let p of price()">
+      {{ p }}
+    </li>
+  </ul>
+
+  <h4>Total: {{ total() }}</h4>
+</div>
