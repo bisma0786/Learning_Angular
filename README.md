@@ -28,4 +28,8 @@ I am using this repository to practice Angular concepts daily and maintain consi
 ✅ If-Else Conditions  
 ✅ Switch Case  
 ✅ For Loop  
+✅ Signals  
+✅ Signal with DataTypes  
+✅ Computed Signals
+✅Effects    
 🔄 More Angular concepts coming soon
